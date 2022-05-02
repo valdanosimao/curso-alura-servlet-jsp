@@ -1,30 +1,15 @@
-<%@page import="java.util.List, br.com.alura.gerenciador.servlet.Empresa"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+    <body>
+        <c:if test= "${not empty empresa}">
+            Empresa ${ empresa } cadastrada com sucesso!
+        </c:if>
 
-<h1>
+        <c:if test= "${empty empresa}">
+            Nenhuma empresa cadastrada!
+        </c:if>
 
-<ul>
-		<%
-			List<Empresa> lista = (List<Empresa>)request.getAttribute("empresas");
-			for (Empresa empresa : lista) {
-		%>
-		<li><%= empresa.getNome()%></li>
-		<%
-			 }
-		%>
-	</ul>
 
-	}
-
-</h1>
-
-</body>
+    </body>
 </html>
