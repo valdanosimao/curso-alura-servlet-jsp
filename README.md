@@ -1,7 +1,7 @@
 # O que aprendi neste curso?
 #
 ## Entendi o que é um Servlet
-## Mapeie requisições HTTP e trabalhei com POST e GET
+## Mapiei requisições HTTP e trabalhei com POST e GET
 ## Gerei HTML dinamicamente com JSP e JSTL
 ## Crie uma CRUD completo e fiz o deploy com Tomcat
 ## Aprendi o que é inversão de controle
